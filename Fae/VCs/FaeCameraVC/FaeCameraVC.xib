@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FaeCameraVC">
+            <connections>
+                <outlet property="btnBack_BottomPadding" destination="YOG-zd-6MP" id="4lc-Ye-xbr"/>
+                <outlet property="btnBack_LeftPadding" destination="ZBd-hK-hp4" id="wfh-Oi-1Yv"/>
+                <outlet property="btnBack_Width" destination="kDd-3U-al7" id="bTY-Lk-PKd"/>
+                <outlet property="btnBurst_BottomPadding" destination="WkG-SN-8uB" id="bEL-jB-F8A"/>
+                <outlet property="btnBurst_RightPadding" destination="lQh-xO-klj" id="hTL-IY-PKd"/>
+                <outlet property="btnBurst_Width" destination="3YR-1i-i8S" id="g26-1i-TTs"/>
+                <outlet property="btnCapture_BottomPadding" destination="AnY-YS-J1M" id="aZh-cK-U8G"/>
+                <outlet property="btnCapture_Width" destination="lcm-nE-uKF" id="Tdg-3a-iU1"/>
+                <outlet property="btnFlash_LeftPadding" destination="BhO-Go-Dcz" id="qKe-cl-W1N"/>
+                <outlet property="btnFlash_TopPadding" destination="ZbR-Np-M7O" id="beZ-nt-ouk"/>
+                <outlet property="btnFlash_Width" destination="Cdr-BZ-Aqp" id="cfT-Qb-nE4"/>
+                <outlet property="btnFlip_RightPadding" destination="OvU-5j-MLC" id="bhI-u7-JHP"/>
+                <outlet property="btnFlip_TopPadding" destination="O2a-0A-zuQ" id="YRN-VF-cQT"/>
+                <outlet property="btnFlip_Width" destination="RXY-or-eAf" id="TT6-Hc-vBT"/>
+                <outlet property="btnGotit_Height" destination="WQd-FB-oSH" id="pQz-KJ-ncS"/>
+                <outlet property="btnGotit_TopPadding" destination="0HA-JY-otS" id="QBm-4d-3ZT"/>
+                <outlet property="btnGotit_Width" destination="La8-ph-XQz" id="Zat-3A-FBh"/>
+                <outlet property="btnMode_BottomPadding" destination="Brf-oo-hte" id="4L9-ma-dwF"/>
+                <outlet property="btnMode_RightPadding" destination="hT8-W6-tRP" id="HhQ-sI-cEa"/>
+                <outlet property="btnMode_Width" destination="yEJ-c7-HzU" id="QYk-Qg-bVS"/>
+                <outlet property="btn_Back" destination="42L-gj-Xk2" id="nNf-WD-9SZ"/>
+                <outlet property="btn_Back_Action" destination="aUh-dq-J3n" id="kkP-wf-xUi"/>
+                <outlet property="btn_Burst" destination="1jD-DI-H2H" id="ogS-CR-qZW"/>
+                <outlet property="btn_Capture" destination="r0t-81-6EK" id="zGD-1I-qlK"/>
+                <outlet property="btn_Flash" destination="OxK-XJ-hpX" id="26f-aL-Kcq"/>
+                <outlet property="btn_Flip" destination="tlK-AF-FOW" id="O78-Of-R4c"/>
+                <outlet property="btn_Flip_Action" destination="xaD-1v-dGH" id="tIb-SW-V8n"/>
+                <outlet property="btn_Gotit" destination="HfL-jQ-yua" id="XG0-Zj-Gkc"/>
+                <outlet property="btn_SwitchMode" destination="j7L-CD-1lY" id="tGm-gJ-tVx"/>
+                <outlet property="cameraOverlay" destination="GTF-gF-SKc" id="8N4-0X-bhN"/>
+                <outlet property="circleOverlay" destination="jG6-Zt-o3Z" id="G2c-py-7Sv"/>
+                <outlet property="introImage" destination="0bX-AZ-meW" id="0ao-E4-IfV"/>
+                <outlet property="view" destination="iN0-l3-epB" id="zSc-uj-YDJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="-155" y="41"/>
+        </view>
+        <view contentMode="scaleToFill" id="GTF-gF-SKc" userLabel="OverLay">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="camera_overlay_circle_6p.png" translatesAutoresizingMaskIntoConstraints="NO" id="jG6-Zt-o3Z" userLabel="Circle">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxK-XJ-hpX" userLabel="btn_flash">
+                    <rect key="frame" x="21" y="13" width="20" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Cdr-BZ-Aqp"/>
+                        <constraint firstAttribute="width" secondItem="OxK-XJ-hpX" secondAttribute="height" multiplier="2:3" id="uHj-Fo-03T"/>
+                    </constraints>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="camera_flash_auto">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlK-AF-FOW" userLabel="btn_flip">
+                    <rect key="frame" x="364" y="13" width="30" height="29"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="tlK-AF-FOW" secondAttribute="height" multiplier="30:29" id="EWD-hg-gDN"/>
+                        <constraint firstAttribute="width" constant="30" id="RXY-or-eAf"/>
+                    </constraints>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="camera_flip_front">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaD-1v-dGH" userLabel="btn_flip_Action">
+                    <rect key="frame" x="359" y="8" width="40" height="39"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="onFlip:" destination="-1" eventType="touchUpInside" id="ohD-9F-8i9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7L-CD-1lY" userLabel="btn_mode">
+                    <rect key="frame" x="365" y="655" width="29" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="j7L-CD-1lY" secondAttribute="height" multiplier="29:44" id="Gmz-fx-2m9"/>
+                        <constraint firstAttribute="width" constant="29" id="yEJ-c7-HzU"/>
+                    </constraints>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="camera_mode_p">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onSwithMode:" destination="-1" eventType="touchUpInside" id="dW6-Tp-hxP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jD-DI-H2H" userLabel="btn_burst">
+                    <rect key="frame" x="305" y="673" width="29" height="28"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="29" id="3YR-1i-i8S"/>
+                        <constraint firstAttribute="width" secondItem="1jD-DI-H2H" secondAttribute="height" multiplier="29:28" id="MNV-Pk-nxg"/>
+                    </constraints>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="camera_burst_3">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onBurstInterval:" destination="-1" eventType="touchUpInside" id="nPw-36-fHe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0t-81-6EK" userLabel="btn_capture">
+                    <rect key="frame" x="170" y="648" width="75" height="75"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="r0t-81-6EK" secondAttribute="height" multiplier="1:1" id="A8P-K9-bo6"/>
+                        <constraint firstAttribute="width" constant="75" id="lcm-nE-uKF"/>
+                    </constraints>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="camera_capture">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onCapture:" destination="-1" eventType="touchUpInside" id="CWm-I6-y3u"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42L-gj-Xk2" userLabel="btn_back">
+                    <rect key="frame" x="21" y="672" width="17" height="28"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="42L-gj-Xk2" secondAttribute="height" multiplier="17:28" id="CB4-qz-RKY"/>
+                        <constraint firstAttribute="width" constant="17" id="kDd-3U-al7"/>
+                    </constraints>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="camera_back">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onBack:" destination="-1" eventType="touchUpInside" id="Ykc-vX-ZbW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUh-dq-J3n" userLabel="btn_back_Action">
+                    <rect key="frame" x="5" y="661" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="aUh-dq-J3n" secondAttribute="height" multiplier="1:1" id="PYa-00-6um"/>
+                        <constraint firstAttribute="width" constant="50" id="V5w-he-FmL"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onBack:" destination="-1" eventType="touchUpInside" id="ItH-Lk-DN6"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="camera_intro_1_6p.png" translatesAutoresizingMaskIntoConstraints="NO" id="0bX-AZ-meW" userLabel="Intro">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfL-jQ-yua">
+                    <rect key="frame" x="126" y="392" width="162" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="162" id="La8-ph-XQz"/>
+                        <constraint firstAttribute="height" constant="54" id="WQd-FB-oSH"/>
+                    </constraints>
+                    <state key="normal" title="Got it!"/>
+                    <connections>
+                        <action selector="onGotit:" destination="-1" eventType="touchUpInside" id="bXS-Vt-zrd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HfL-jQ-yua" firstAttribute="top" secondItem="GTF-gF-SKc" secondAttribute="top" constant="392" id="0HA-JY-otS"/>
+                <constraint firstAttribute="trailing" secondItem="jG6-Zt-o3Z" secondAttribute="trailing" id="0Li-U0-MzF"/>
+                <constraint firstItem="xaD-1v-dGH" firstAttribute="height" secondItem="tlK-AF-FOW" secondAttribute="height" constant="10" id="1Dk-z0-Ifv"/>
+                <constraint firstAttribute="bottom" secondItem="r0t-81-6EK" secondAttribute="bottom" constant="13" id="AnY-YS-J1M"/>
+                <constraint firstItem="OxK-XJ-hpX" firstAttribute="leading" secondItem="GTF-gF-SKc" secondAttribute="leading" constant="21" id="BhO-Go-Dcz"/>
+                <constraint firstAttribute="bottom" secondItem="j7L-CD-1lY" secondAttribute="bottom" constant="37" id="Brf-oo-hte"/>
+                <constraint firstItem="0bX-AZ-meW" firstAttribute="top" secondItem="GTF-gF-SKc" secondAttribute="top" id="F7V-mi-zNS"/>
+                <constraint firstItem="0bX-AZ-meW" firstAttribute="leading" secondItem="GTF-gF-SKc" secondAttribute="leading" id="FNi-eD-Dj9"/>
+                <constraint firstItem="aUh-dq-J3n" firstAttribute="centerY" secondItem="42L-gj-Xk2" secondAttribute="centerY" id="HdH-9g-ZMQ"/>
+                <constraint firstItem="tlK-AF-FOW" firstAttribute="top" secondItem="GTF-gF-SKc" secondAttribute="top" constant="13" id="O2a-0A-zuQ"/>
+                <constraint firstAttribute="trailing" secondItem="0bX-AZ-meW" secondAttribute="trailing" id="O7E-mU-MeK"/>
+                <constraint firstAttribute="trailing" secondItem="tlK-AF-FOW" secondAttribute="trailing" constant="20" id="OvU-5j-MLC"/>
+                <constraint firstAttribute="bottom" secondItem="jG6-Zt-o3Z" secondAttribute="bottom" id="Sct-Uy-d3l"/>
+                <constraint firstItem="jG6-Zt-o3Z" firstAttribute="top" secondItem="GTF-gF-SKc" secondAttribute="top" id="UdD-BR-c0e"/>
+                <constraint firstAttribute="bottom" secondItem="1jD-DI-H2H" secondAttribute="bottom" constant="35" id="WkG-SN-8uB"/>
+                <constraint firstItem="xaD-1v-dGH" firstAttribute="width" secondItem="tlK-AF-FOW" secondAttribute="width" constant="10" id="Wka-op-RXK"/>
+                <constraint firstAttribute="bottom" secondItem="42L-gj-Xk2" secondAttribute="bottom" constant="36" id="YOG-zd-6MP"/>
+                <constraint firstItem="42L-gj-Xk2" firstAttribute="leading" secondItem="GTF-gF-SKc" secondAttribute="leading" constant="21" id="ZBd-hK-hp4"/>
+                <constraint firstItem="OxK-XJ-hpX" firstAttribute="top" secondItem="GTF-gF-SKc" secondAttribute="top" constant="13" id="ZbR-Np-M7O"/>
+                <constraint firstAttribute="trailing" secondItem="j7L-CD-1lY" secondAttribute="trailing" constant="20" id="hT8-W6-tRP"/>
+                <constraint firstItem="j7L-CD-1lY" firstAttribute="leading" secondItem="1jD-DI-H2H" secondAttribute="trailing" constant="31" id="lQh-xO-klj"/>
+                <constraint firstItem="xaD-1v-dGH" firstAttribute="centerX" secondItem="tlK-AF-FOW" secondAttribute="centerX" id="qPo-s3-lvM"/>
+                <constraint firstItem="aUh-dq-J3n" firstAttribute="centerX" secondItem="42L-gj-Xk2" secondAttribute="centerX" id="s9y-K7-OaE"/>
+                <constraint firstAttribute="bottom" secondItem="0bX-AZ-meW" secondAttribute="bottom" id="sjI-7G-cIl"/>
+                <constraint firstItem="HfL-jQ-yua" firstAttribute="centerX" secondItem="GTF-gF-SKc" secondAttribute="centerX" id="slB-I5-9Qk"/>
+                <constraint firstItem="jG6-Zt-o3Z" firstAttribute="leading" secondItem="GTF-gF-SKc" secondAttribute="leading" id="vfR-eX-sqg"/>
+                <constraint firstItem="r0t-81-6EK" firstAttribute="centerX" secondItem="GTF-gF-SKc" secondAttribute="centerX" id="wwn-BX-NN3"/>
+                <constraint firstItem="xaD-1v-dGH" firstAttribute="centerY" secondItem="tlK-AF-FOW" secondAttribute="centerY" id="yoU-wW-tMi"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="256" y="945"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera_back" width="17" height="28"/>
+        <image name="camera_burst_3" width="31" height="26"/>
+        <image name="camera_capture" width="75" height="75"/>
+        <image name="camera_flash_auto" width="20" height="30"/>
+        <image name="camera_flip_front" width="31" height="29"/>
+        <image name="camera_intro_1_6p.png" width="1242" height="2208"/>
+        <image name="camera_mode_p" width="31" height="45"/>
+        <image name="camera_overlay_circle_6p.png" width="1242" height="2208"/>
+    </resources>
+</document>
